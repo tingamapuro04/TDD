@@ -1,0 +1,10 @@
+example_id                    | status | run_time        |
+----------------------------- | ------ | --------------- |
+./spec/solver1_spec.rb[1:1:1] | passed | 0.00018 seconds |
+./spec/solver1_spec.rb[1:1:2] | passed | 0.00021 seconds |
+./spec/solver1_spec.rb[1:1:3] | passed | 0.00094 seconds |
+./spec/solver1_spec.rb[1:1:4] | passed | 0.00017 seconds |
+./spec/solver_spec.rb[1:1:1]  | passed | 0.00091 seconds |
+./spec/solver_spec.rb[1:1:2]  | passed | 0.00287 seconds |
+./spec/solver_spec.rb[1:1:3]  | passed | 0.00032 seconds |
+./spec/solver_spec.rb[1:2:1]  | passed | 0.00018 seconds |

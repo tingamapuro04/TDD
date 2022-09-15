@@ -1,15 +1,12 @@
 class Solver
-  def factorial(n)
-    if n == 0
-      return 1
-    elsif n < 0
-      raise 'Only positive numbers'
-    end
+  def factorial(num)
+    return 1 if num.zero?
+    raise 'Only positive numbers' if num.negative?
 
-    i = n - 1
-    k = n
+    i = num - 1
+    k = num
 
-    while i > 0 do
+    while i.positive?
       k *= i
       i -= 1
     end
@@ -20,18 +17,15 @@ class Solver
     string.reverse
   end
 
-  def fizzbuzz(n)
-    if (n % 5 == 0 && n % 3 == 0)
-      return 'fizzbuzz'
-    elsif (n % 3 == 0)
-      return 'fizz'
-    elsif (n % 5 == 0)
-      return 'buzz'
+  def fizzbuzz(num)
+    if (num % 5).zero? && (num % 3).zero?
+      'fizzbuzz'
+    elsif (num % 3).zero?
+      'fizz'
+    elsif (num % 5).zero?
+      'buzz'
     else
-      return n.to_s
+      num.to_s
     end
   end
 end
-
-solver = Solver.new
-puts solver.fizzbuzz(6)
