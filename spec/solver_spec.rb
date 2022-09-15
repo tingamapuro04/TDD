@@ -1,4 +1,5 @@
 require 'spec_helper'
+require_relative '../solver.rb'
 
 RSpec.describe Solver do
   describe 'factorial' do
@@ -10,8 +11,7 @@ RSpec.describe Solver do
 
     it 'Raises an exception for negative factorials' do
       test = Solver.new
-      fact = test.factorial(-2)
-      expect { fact }.to raise_error('Only positive numbers')
+      expect { test.factorial(-2) }.to raise_error('Only positive numbers')
     end
 
     it 'factorial of zero is 1' do
