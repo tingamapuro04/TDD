@@ -20,4 +20,14 @@ RSpec.describe Solver do
       expect(fact).to eql(1)
     end
   end
+
+  describe '#reversed' do
+  it 'should return a reversed string' do
+    str = Solver.new
+    str1 = str.reversed('hello')
+    expect(str1).to be 'olleh'
+  end
+  end
+
+
 end
