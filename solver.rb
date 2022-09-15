@@ -10,8 +10,8 @@ class Solver
     k = n
 
     while i > 0 do
-      k*= i
-      i-=1
+      k *= i
+      i -= 1
     end
     k
   end
@@ -21,18 +21,17 @@ class Solver
   end
 
   def fizzbuzz(n)
-      if (n % 5 == 0 && n % 3 == 0)
-        return 'fizzbuzz'
-      elsif (n % 3 == 0)
-        return 'fizz'
-      elsif (n % 5 == 0)
-        return 'buzz'
-      else 
-        return n.to_s
-      end
+    if (n % 5 == 0 && n % 3 == 0)
+      return 'fizzbuzz'
+    elsif (n % 3 == 0)
+      return 'fizz'
+    elsif (n % 5 == 0)
+      return 'buzz'
+    else
+      return n.to_s
+    end
   end
 end
-
 
 solver = Solver.new
 puts solver.fizzbuzz(6)
