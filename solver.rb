@@ -15,4 +15,10 @@ class Solver
     end
     k
   end
+
+  def reversed(string)
+    string.reverse
+  end
+
+
 end

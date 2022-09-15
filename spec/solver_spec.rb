@@ -25,7 +25,7 @@ RSpec.describe Solver do
   it 'should return a reversed string' do
     str = Solver.new
     str1 = str.reversed('hello')
-    expect(str1).to be 'olleh'
+    expect(str1).to eql 'olleh'
   end
   end
 
